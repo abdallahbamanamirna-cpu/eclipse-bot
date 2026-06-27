@@ -35,3 +35,8 @@ async def ping(interaction: discord.Interaction):
     await interaction.response.send_message("🏓 Pong ! Je suis bien en ligne.")
 
 bot.run(TOKEN)
+@bot.tree.command(name="bonjour", description="Le bot te dit bonjour.")
+async def bonjour(interaction: discord.Interaction):
+    await interaction.response.send_message(
+        f"👋 Bonjour {interaction.user.mention} ! Bienvenue sur **Éclipse Des Dragons** 🐉💜"
+    )
