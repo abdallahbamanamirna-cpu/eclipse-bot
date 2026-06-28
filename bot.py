@@ -34,7 +34,7 @@ async def on_member_join(member):
 async def ping(interaction: discord.Interaction):
     await interaction.response.send_message("🏓 Pong ! Je suis bien en ligne.")
 
-bot.run(TOKEN)
+
 @bot.tree.command(name="bonjour", description="Le bot te dit bonjour.")
 async def bonjour(interaction: discord.Interaction):
     await interaction.response.send_message(
