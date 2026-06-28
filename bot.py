@@ -40,3 +40,4 @@ async def bonjour(interaction: discord.Interaction):
     await interaction.response.send_message(
         f"👋 Bonjour {interaction.user.mention} ! Bienvenue sur **Éclipse Des Dragons** 🐉💜"
     )
+bot.run(TOKEN)
